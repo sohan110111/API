@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JSON</h1>
+    <h2>JavaScript Object Notation</h2>
+    <script>
+        const user = {id : 9876,
+         name : "Masud",
+         love : {choiceOne : "Mathematics", choiceTwo : "programming", choiceThree : "Physics"},
+         friendsAge : [11, 12, 13],
+         friendsName : ["Abul", "Dabul", "Kabul"],
+         };
+        const userJSON = JSON.stringify(user); // for rady JSON_convert 
+        console.log(userJSON);  // {"id":9876,"name":"Masud"}
+        const userFromJSON = JSON.parse(userJSON); // reay for JSON ot JavaScript 
+        console.log(userFromJSON);
+    </script>
+</body>
+</html>
